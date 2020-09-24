@@ -1,0 +1,5 @@
+green: Weapons/Starter-Weapon-V2
+blue: Weapons/Shotgun
+blue: Weapons/Grenade-Launcher
+purple: Weapons/ShotgunDragon
+red: Weapons/Laser-Weapon

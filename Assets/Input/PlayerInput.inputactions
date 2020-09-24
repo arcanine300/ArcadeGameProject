@@ -1,0 +1,87 @@
+{
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "PS4",
+            "id": "17345633-4826-4a4e-bacf-a139267f698c",
+            "actions": [
+                {
+                    "name": "TurnAround",
+                    "type": "Button",
+                    "id": "bd163b0c-be46-47a5-b350-87e15c901b0a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "bd0caf76-1e26-4b23-bae6-29b2fab15918",
+                    "path": "<DualShockGamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TurnAround",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "XboxOne",
+            "id": "4aa65469-d37a-4157-8dbd-4830a59f22e3",
+            "actions": [
+                {
+                    "name": "TurnAround",
+                    "type": "Button",
+                    "id": "67d92a11-86ef-443a-bc53-eead0637dd91",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a6283357-1b3f-4575-ba20-65d44f9c86e1",
+                    "path": "<XInputController>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TurnAround",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PC",
+            "id": "9b4d1add-e84e-42d2-a21c-a9248c465c51",
+            "actions": [
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "b561ccb5-9def-48a5-880a-23f3b728deb0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f9eabf6d-5577-4302-ab72-f42071fbe0a2",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

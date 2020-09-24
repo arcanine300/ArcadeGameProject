@@ -1,0 +1,6 @@
+blue: Items/Weapon-Damage-Multiplier
+green: Items/Weapon-Defense-Reset
+green: Items/Extra-Life
+green: Items/Attack-Speed
+green: Items/Temp-Player-Speed
+green: ITems/Score-Multiplier
