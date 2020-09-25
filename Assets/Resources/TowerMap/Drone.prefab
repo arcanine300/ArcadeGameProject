@@ -90,11 +90,11 @@ GameObject:
   - component: {fileID: 2590966492744167168}
   - component: {fileID: 8017969224649754116}
   - component: {fileID: 919132148200349053}
-  - component: {fileID: 3071220031893708005}
-  - component: {fileID: 3646961884660076058}
   - component: {fileID: 1849866139950234373}
   - component: {fileID: 4274450936832680364}
   - component: {fileID: 5335705795358202603}
+  - component: {fileID: 3123509983517328467}
+  - component: {fileID: 869036333345656236}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Enemy
@@ -149,46 +149,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!195 &3071220031893708005
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2936108228440028602}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 10
-  m_Acceleration: 25
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 10
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 0
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 1
---- !u!114 &3646961884660076058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2936108228440028602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f888651ccc3463419a20523508f423d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 6
-  _deltaSpeed: 0
-  _moveWeird: 0
-  _baseDistance: 10
-  _differentDistance: 1
-  _differenceDistanceDelta: 2
 --- !u!114 &1849866139950234373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +204,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BurningEffect: {fileID: 0}
+--- !u!195 &3123509983517328467
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2936108228440028602}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 1
+  m_Speed: 3.5
+  m_Acceleration: 12
+  avoidancePriority: 50
+  m_AngularSpeed: 900
+  m_StoppingDistance: 10
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &869036333345656236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2936108228440028602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e790e80646597764c8334bbd18139bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Target: {fileID: 0}
+  MinRange: 15
+  MaxRange: 20
+  SingleAreaTime: 3
+  ClosenessThreshold: 3
+  Speed: 20
 --- !u!1 &2961745710408002172
 GameObject:
   m_ObjectHideFlags: 0

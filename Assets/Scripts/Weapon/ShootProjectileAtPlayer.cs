@@ -42,7 +42,7 @@ public class ShootProjectileAtPlayer : MonoBehaviour
         theProjectile.CanHitEnemy = false;
         theProjectile.Damage = _damage;
         // change to vector3.forward when the model is fixed cuz cyclinder is facing up so its forward is down
-        projectile.GetComponent<Rigidbody>().velocity = (GetComponent<EnemyMoveTo>().Target.transform.position - transform.position).normalized * (_projectileSpeed);       
+        projectile.GetComponent<Rigidbody>().velocity = (GetComponent<EnemyRangeAI>().Target.transform.position - transform.position).normalized * (_projectileSpeed);
     }
 
     private void Update()

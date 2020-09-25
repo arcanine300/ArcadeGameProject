@@ -15,6 +15,7 @@ public class SnowStormGimmick : MonoBehaviour, IMapGimmick
     public float StartTimeStorm = 0.25f;
     public float StartSpeedRegular = 8;
     public float StartSpeedStorm = 50;
+    public float FogMax = 0.045f;
 
     public int SpawnSize = 200;
     public float LinearXVelocity = -20;
@@ -152,11 +153,11 @@ public class SnowStormGimmick : MonoBehaviour, IMapGimmick
 
     private IEnumerator FogIn()
     {
-        float fogMax = 0.045f;
+        //float fogMax = 0.045f;
         RenderSettings.fogDensity = 0.0f;
         RenderSettings.fog = true;
 
-        while (RenderSettings.fogDensity <= fogMax)
+        while (RenderSettings.fogDensity <= FogMax)
         {
             RenderSettings.fogDensity += 0.0025f;
             yield return new WaitForEndOfFrame();

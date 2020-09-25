@@ -1,5 +1,1 @@
-﻿tower_map
-snow_map
-laser_map
-artillery_map
-abstract_map
+﻿laser_map

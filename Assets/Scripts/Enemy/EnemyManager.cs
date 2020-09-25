@@ -10,6 +10,9 @@ public class EnemyManager : MonoBehaviour
 
     public bool LockState { get; set; }
 
+    public bool SpawnOnlyMelee = false;
+    public bool SpawnOnlyRanged = false;
+
     [SerializeField]
     private float _enemySpawnGap = 0.5f;
     [SerializeField]
@@ -94,7 +97,15 @@ public class EnemyManager : MonoBehaviour
         enemy.transform.SetParent(transform);
         _currentEnemies.Add(enemy);
 
-        enemy.GetComponent<EnemyMoveTo>().Target = _playerTransform;
+        if (enemyPrefab == _enemyType1)
+        {
+            enemy.GetComponent<EnemyMoveTo>().Target = _playerTransform;
+        }
+        else if (enemyPrefab == _enemyType2)
+        {
+            enemy.GetComponent<EnemyRangeAI>().Target = _playerTransform;
+        }
+        
     }
 
     private IEnumerator SpawnMeleeHordes(int enemyCount)
@@ -136,24 +147,39 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
+    private IEnumerator SpawnRanged()
+    {
+        float delayTime = 0.3f;
+
+        for (int i = 0; i < _enemyType2Amount; i++)
+        {
+            AddEnemy(_enemyType2, GetRandomNewSpawnPoint());
+            yield return new WaitForSeconds(delayTime);
+        }    
+    }
+
     public void StartWave()
     {
         _currentEnemies = new List<GameObject>();
         switch (GameManager.Instance.CurrentMapWave)
         {
-            case 1:
-                StartCoroutine(SpawnMeleeHordes(15));
+            case 1:                
+                //StartCoroutine(SpawnMeleeHordes(15));
+                StartCoroutine(SpawnRanged());
                 break;
             case 2:
-                StartCoroutine(SpawnMeleeHordes(30));
+                //StartCoroutine(SpawnMeleeHordes(30));
+                StartCoroutine(SpawnRanged());
                 _hordeCount += 2;
                 break;
             case 3:
-                StartCoroutine(SpawnMeleeHordes(50));
+                //StartCoroutine(SpawnMeleeHordes(50));
+                StartCoroutine(SpawnRanged());
                 _hordeCount += 5;
                 break;
             case 4:
-                StartCoroutine(SpawnMeleeHordes(80));
+                //StartCoroutine(SpawnMeleeHordes(80));
+                StartCoroutine(SpawnRanged());
                 _hordeCount += 10;
                 break;
             default:

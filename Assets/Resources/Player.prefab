@@ -3447,6 +3447,7 @@ GameObject:
   - component: {fileID: 2590224414092650783}
   - component: {fileID: -1668234025368710862}
   - component: {fileID: -4257321597207381917}
+  - component: {fileID: -1128775567446069184}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -3566,10 +3567,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cdbdcb5a22882468f48a13ce77acdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lives: 3
-  Health: 100
-  BaseHealth: 100
-  IsAlive: 1
+  Lives: 9999
+  Health: 1e+11
+  BaseHealth: 1e+18
+  IsAlive: 0
   CanRespawn: 1
   ReviveBlast: {fileID: 4169317484862896215}
   blastDuration: 0.15
@@ -3673,6 +3674,18 @@ MonoBehaviour:
   _moveSpeed: 9.75
   _scoreMultiplier: 1
   DefaultPlayerMoveSpeed: 0
+--- !u!114 &-1128775567446069184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4169317485807927669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f84eeede7d575e47aee2ef4cc29fd41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4169317485862524370
 GameObject:
   m_ObjectHideFlags: 0

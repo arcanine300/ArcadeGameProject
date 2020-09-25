@@ -687,7 +687,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347472055}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9770541b86a94d4091ab099dafc0d89, type: 3}
   m_Name: 
@@ -2061,12 +2061,12 @@ PrefabInstance:
     - target: {fileID: 1546729229393068706, guid: 826a8da3d2a335243b0713a99303dbab,
         type: 3}
       propertyPath: _enemyType1Amount
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1546729229393068706, guid: 826a8da3d2a335243b0713a99303dbab,
         type: 3}
       propertyPath: _enemyType2Amount
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1546729229393068706, guid: 826a8da3d2a335243b0713a99303dbab,
         type: 3}
