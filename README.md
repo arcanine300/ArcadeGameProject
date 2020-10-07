@@ -6,7 +6,7 @@ If you're interested in playing the game you can download the PC or android vers
 
 ##### Daniel Khan Hafner
 * https://github.com/arcanine300
-* Roles: Enviornment designer, shader developer, VFX programmer
+* Roles: Enviornment & lighting, shader developer, VFX programmer 
 ##### Daniil Sen
 * https://github.com/Daniil-Sen
 * Roles: Lead programmer, game system & AI developer 
