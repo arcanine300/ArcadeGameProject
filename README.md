@@ -9,4 +9,4 @@ If you're interested in playing the game you can download the PC or android vers
 * Roles: Enviornment & lighting, shader developer, VFX programmer, 3D asset creation 
 ##### Daniil Sen
 * https://github.com/Daniil-Sen
-* Roles: Lead programmer, game system & AI developer 
+* Roles: Game systems programmer & AI developer 
